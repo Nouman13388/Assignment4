@@ -6,6 +6,7 @@ import Customer from './components/Customer';
 import Ticket from './components/Ticket';
 import Reservation from './components/Reservation';
 import Navbar from './components/Navbar';
+import Train from './components/Train';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/customer" element={<Customer />} />
           <Route path="/ticket" element={<Ticket />} />
           <Route path="/reservation" element={<Reservation />} />
+          <Route path="/train" element={<Train />} />
         </Routes>
       </Router>
     </div>
