@@ -4,9 +4,9 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const app = express();
 
-dotenv.config(); // Load environment variables
+dotenv.config();
 
-connectDB(); // Connect to MongoDB
+connectDB(); 
 
 const employeeRoutes = require('./routes/employee.routes');
 const customerRoutes = require('./routes/customer.routes');
@@ -15,7 +15,7 @@ const ticketRoutes = require('./routes/ticket.routes');
 const reservationRoutes = require('./routes/reservation.routes');
 
 app.use(express.json());
-app.use(cors()); // Enable CORS
+app.use(cors());
 
 app.use('/employee', employeeRoutes);
 app.use('/customer', customerRoutes);
